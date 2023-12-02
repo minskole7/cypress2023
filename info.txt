@@ -1,0 +1,6 @@
+npm init -y
+npm install cypress
+npm install
+npx cypress open 
+//npx cypress run
+

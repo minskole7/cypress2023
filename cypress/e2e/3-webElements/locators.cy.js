@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
 describe('Locating elements', function () {
-
     it('find a single element', function () {
         cy.visit('https://webdriveruniversity.com/Contact-Us/contactus.html')
         cy.get('h2[name= "contactme"]').should('exist')
@@ -29,10 +28,6 @@ describe('Locating elements', function () {
         cy.get('#contact_form').should('exist')
     })
 
-    it('find element by link text',function(){
-        cy.visit('https://webdriveruniversity.com/')
-        cy.contains('CONTACT US').should('exist')
-    })
 
     it('find element by name attribute',function(){
         cy.visit('https://webdriveruniversity.com/Contact-Us/contactus.html')
@@ -44,6 +39,16 @@ describe('Locating elements', function () {
         cy.get('h2').should('exist').should('have.text','CONTACT US')
     })
     
-    // partial link text
+    // partial link text -- cy.contains()
 
+    it('find element by link text',function(){
+        cy.visit('https://webdriveruniversity.com/')
+        cy.contains(`Cypress with Cucumber BDD`).should('exist')
+    })
+
+
+    it('verify the element by linkText',function(){
+        cy.visit('https://webdriveruniversity.com/')
+        cy.contains('Cypress with Cucumber BDD - Beginner to Expert in 9 Hours!').should('be.visible')
+    })
 })
