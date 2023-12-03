@@ -73,7 +73,7 @@ describe('webelements method',function(){
 
     it('elemnet is enabled',function(){
         cy.visit('https://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html')
-        cy.get('[value="cabbage"]').should('be.disabled')
+        cy.get('[value="cabbage"]').should('be.disabled' )
     })
 
 
