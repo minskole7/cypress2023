@@ -82,9 +82,6 @@ describe('traversal method',function(){
     // Mayuri  - Wendesday
 
 
-
-
-
 })
 
 
