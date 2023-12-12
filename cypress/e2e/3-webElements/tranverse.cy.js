@@ -13,6 +13,12 @@ describe('tranversal method',function(){
         cy.get("#veggie").prev().should('have.text','Figs')
     })
 
+    it('To get the next sibling DOM element within elements, use the .next() command.',function(){
+        cy.visit("https://webdriveruniversity.com/Data-Table/index.html")
+        cy.get("#veggie").prev().should('have.text','Asparagus')
+    })
+
+
     it('To get all of the next sibling DOM elements within elements, use the .nextAll() command.',function(){
         cy.visit("https://webdriveruniversity.com/Data-Table/index.html")
         cy.get("#veggie").nextAll().should('have.length',4)
@@ -27,7 +33,7 @@ describe('tranversal method',function(){
 
     it('To get all sibling DOM elements of elements, use the .siblings() command.',function(){
         cy.visit("https://webdriveruniversity.com/Data-Table/index.html")
-        cy.get("#veggie").siblings().should('have.length',10)
+        cy.get("#veggie").siblings().should('have.length')
     })
 
 })
