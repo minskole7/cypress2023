@@ -15,7 +15,7 @@ describe('tranversal method',function(){
 
     it('To get the next sibling DOM element within elements, use the .next() command.',function(){
         cy.visit("https://webdriveruniversity.com/Data-Table/index.html")
-        cy.get("#veggie").prev().should('have.text','Asparagus')
+        cy.get("#veggie").next().should('have.text','Asparagus')
     })
 
 
