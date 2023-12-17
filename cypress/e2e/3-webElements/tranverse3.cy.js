@@ -19,12 +19,15 @@ describe('traverse day-3', function () {
 
     it.only('To get the closest ancestor DOM element, use the .closest() command.',function(){
         cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
-        cy.get('#coffee').closest('div').should('have.class','thumbnail')
+        //cy.get('#coffee').closest('div').should('have.class','thumbnail')
+        cy.get('.traversal-drinks-list').closest('div').should('have.class','thumbnail')
+        cy.get('.traversal-buttons').closest('div').should('have.class','thumbnail')
     })
 
     it.only('To get parents DOM element of elements until other element, use the .parentsUntil() command.',function(){
         cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
         cy.get('#coffee').parentsUntil('.thumbnail').should('have.length',1)
+        
     })
 
 
