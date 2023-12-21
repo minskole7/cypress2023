@@ -63,7 +63,7 @@ const { chromium } = require('playwright');
   });
   console.log(`Next all elements text: ${nextAllElementsText.join(', ')}`);
 
-  // Traverse using 'nextUntil'
+  // Traverse using 'nextUntil '
   const nextUntilElementsText = await page.$$eval('.traversal-list>li:first-child', (elements) => {
     const nextUntilElements = Array.from(elements[0].nextUntil('li'));
     return nextUntilElements.map((el) => el.innerText);
