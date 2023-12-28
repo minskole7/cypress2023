@@ -18,6 +18,7 @@
 //selection of the element 
 
 describe('traversal method',function(){
+
     it('revision day1 ',function(){
         cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
         // chidren()
@@ -33,6 +34,7 @@ describe('traversal method',function(){
         //siblings()
         cy.get('#milk').siblings().should('have.length',4)
     })
+    
 
     it.only('To get all previous sibling DOM elements within elements until other element, use the .prevUntil() command.',function(){
         cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
