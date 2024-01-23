@@ -36,11 +36,10 @@ describe('learning to manage iframe in cypress',function(){
 
     it('learning to manage iframe - javascript',function(){
         cy.visit('https://webdriveruniversity.com/IFrame/index.html')
-       // cy.wrap(bodyExist('frame')).as('body')
-       bodyExist('frame').contains('Home').should('have.attr','href')
+        bodyExist('frame').contains('Home').should('have.attr','href')
     })
 
-   
+   // prequisite --- javascript / dom / ajax
 
    
 
