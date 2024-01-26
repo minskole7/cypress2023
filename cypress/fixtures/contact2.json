@@ -1,0 +1,14 @@
+{
+    "userdataOne":{
+        "firstName": "sarika",
+        "lastName": "pansare",
+        "email": "sarikapansare29@gmail.com",
+        "message":"i am data for user one"
+    },
+    "userdataTwo":{
+        "firstName": "amol",
+        "lastName": "rao",
+        "email": "amolrao@gmail.com",
+        "message":"i am data for user two"
+    }
+}
